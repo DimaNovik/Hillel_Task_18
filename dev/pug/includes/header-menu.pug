@@ -1,0 +1,17 @@
+.header
+	.logo
+		p SH
+	.main-menu
+		-var nav_header = {'Woman':'woman.html','Men':'#','Kids':'#','Comming Soon':'#','About':'#'}
+		ul
+			each linkPath, linkName in nav_header
+				li: a(href=linkPath)=linkName
+	.login-form
+		.login-menu
+			p 
+				img(src='img/user.png') 
+				a(href='login') Log In
+				img(src='img/basket.png') 
+				a(href='basket') Basket (0)
+		.search
+			img(src='img/search.png')

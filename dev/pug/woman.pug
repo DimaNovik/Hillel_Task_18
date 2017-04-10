@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		link(href='css/main.css' rel='stylesheet')
+		title First template on pug
+	body
+		.wrapper
+			include includes/header-page-2.pug
+
+			include includes/products.pug
+
+			.check
+				p Check our lookbook
+			include includes/slider.pug
+
+			include includes/footer.pug
+

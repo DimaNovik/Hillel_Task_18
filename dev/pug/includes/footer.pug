@@ -1,0 +1,27 @@
+.footer
+	.foo-1
+		h2 Collection
+		-var nav = {'Woman (1725)':'woman.html','Men (635)':'woman.html','Kids (2514)':'kids.html','Comming Soon (76)':'comming.html'}
+		ul
+			each linkPath, linkName in nav
+				li: a(href=linkPath)=linkName
+	.foo-2
+		h2 Site
+		-var nav_site = {'Terms of Service':'#','Privacy Policy':'#','Copyright Policy':'#','Press Kit':'#','Support':'#'}
+		ul
+			each linkPath, linkName in nav_site
+				li: a(href=linkPath)=linkName
+	.foo-3
+		h2 Shop
+		-var nav_shop = {'About Us':'#','Shipping Metods':'#','Career':'#','Contact':'#'}
+		ul
+			each linkPath, linkName in nav_shop
+				li: a(href=linkPath)=linkName
+	.foo-4
+		h2 Social
+		p Shoper is made ith love in Warsaw
+		p 2014 © All rights reserved. El Passion
+		.social-icon
+			.twit
+			.fb
+			.inst

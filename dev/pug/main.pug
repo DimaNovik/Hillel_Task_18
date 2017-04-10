@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		link(href='css/main.css' rel='stylesheet')
+		title First template on pug
+	body
+		.wrapper
+			include includes/header-menu.pug
+			.section-header
+				h1 Hazy shade of spring
+				p Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.
+				button(type='button') Check new arrivals
+	
+			include includes/main-content.pug
+
+			.section-sign
+				h2 sign up to receive our updates
+				p Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.
+				input(type='text' name='email' placeholder='Your email') 
+				button(type='button') Add
+
+			include includes/slider.pug
+
+			include includes/footer.pug
